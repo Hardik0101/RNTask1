@@ -1,11 +1,4 @@
-import {
-  View,
-  Text,
-  Image,
-  FlatList,
-  StyleSheet,
-  ScrollView,
-} from "react-native";
+import { View, Text, Image, FlatList, StyleSheet } from "react-native";
 import React, { useState, useEffect } from "react";
 
 function Horizontal() {
@@ -34,6 +27,7 @@ function Horizontal() {
 
   return (
     <FlatList
+      style={{ marginBottom: 6 }}
       horizontal={true}
       scrollEnabled
       data={data}
@@ -65,9 +59,10 @@ const styles = StyleSheet.create({
     borderColor: "#87ceeb",
     borderRadius: 20,
     padding: 10,
-    marginBottom: 4,
-    marginRight: 4,
+    marginBottom: 12,
+    marginRight: 8,
     width: 300,
+    height: "100%",
   },
   content: {
     alignItems: "center",

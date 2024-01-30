@@ -34,7 +34,7 @@ function DataShow() {
 
   return (
     <FlatList
-      style={{ height: "100%" }}
+      style={{ height: "100%", marginBottom: -30 }}
       scrollEnabled
       data={data}
       renderItem={renderItem}

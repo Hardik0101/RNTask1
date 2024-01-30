@@ -19,7 +19,10 @@ export default function App() {
         <Navebar />
         <HomeScreen />
       </View>
-      <ScrollView style={{ padding: 5 }}>
+      <ScrollView
+        style={{ padding: 5, marginBottom: 12 }}
+        contentContainerStyle={{ marginHorizontal: 20, marginBottom: 12 }}
+      >
         <DataShow />
         <Horizontal />
       </ScrollView>
