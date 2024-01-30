@@ -1,15 +1,27 @@
-import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  ScrollView,
+  StatusBar,
+} from "react-native";
 import HomeScreen from "./screen/HomeScreen";
 import Navebar from "./NaveBar/NaveBar";
 import DataShow from "./Components/DataShow";
+import Horizontal from "./Components/Horizontal";
 
 export default function App() {
   return (
     <>
-      <Navebar />
-      <HomeScreen />
-      <ScrollView style={styles.rootcontainer}>
+      <StatusBar style="light" />
+      <View style={styles.rootcontainer}>
+        <Navebar />
+        <HomeScreen />
+      </View>
+      <ScrollView style={{ padding: 5 }}>
         <DataShow />
+        <Horizontal />
       </ScrollView>
     </>
   );
@@ -17,6 +29,6 @@ export default function App() {
 
 const styles = StyleSheet.create({
   rootcontainer: {
-    marginTop: 20,
+    marginTop: 2,
   },
 });
