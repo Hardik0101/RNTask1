@@ -8,7 +8,7 @@ import {
 } from "react-native";
 import React, { useState, useEffect } from "react";
 
-function DataShow() {
+function VerticalScrollData() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -43,13 +43,9 @@ function DataShow() {
   );
 }
 
-export default DataShow;
+export default VerticalScrollData;
 
 const styles = StyleSheet.create({
-  //   data: {
-  //     // flex: 1,
-  //     height: "100%",
-  //   },
   title: {
     fontWeight: "bold",
     marginLeft: 10,
@@ -67,7 +63,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#e0ffff",
     borderWidth: 2,
     borderColor: "#87ceeb",
-    borderRadius: 20,
+    borderRadius: 10,
     padding: 10,
     marginBottom: 4,
   },

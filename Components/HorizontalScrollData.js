@@ -1,7 +1,7 @@
 import { View, Text, Image, FlatList, StyleSheet } from "react-native";
 import React, { useState, useEffect } from "react";
 
-function Horizontal() {
+function HorizontalScrollData() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ function Horizontal() {
 
   return (
     <FlatList
-      style={{ marginBottom: 6 }}
+      style={{ marginBottom: 30 }}
       horizontal={true}
       scrollEnabled
       data={data}
@@ -37,7 +37,7 @@ function Horizontal() {
   );
 }
 
-export default Horizontal;
+export default HorizontalScrollData;
 
 const styles = StyleSheet.create({
   title: {
@@ -57,11 +57,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#e0ffff",
     borderWidth: 2,
     borderColor: "#87ceeb",
-    borderRadius: 20,
+    borderRadius: 10,
     padding: 10,
     marginBottom: 12,
-    marginRight: 8,
-    width: 300,
+    marginRight: 4,
+    width: 340,
     height: "100%",
   },
   content: {
@@ -70,6 +70,7 @@ const styles = StyleSheet.create({
   },
   priceData: {
     marginTop: 4,
+    marginBottom: 36,
   },
   price: {
     fontSize: 20,

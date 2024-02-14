@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Image } from "react-native";
 
-function Navebar() {
+function HeaderComponent() {
   return (
     <View style={styles.container}>
       <Image
@@ -14,7 +14,7 @@ function Navebar() {
   );
 }
 
-export default Navebar;
+export default HeaderComponent;
 
 const styles = StyleSheet.create({
   container: {
